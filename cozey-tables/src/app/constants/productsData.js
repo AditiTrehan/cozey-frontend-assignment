@@ -3,6 +3,7 @@ import MensaBlackCT from "../../../public/images/MensaBlack.JPG";
 import MensaWalnutCT from "../../../public/images/MensaWalnut.JPG";
 import StellaOakCT from "../../../public/images/StellaOak.JPG";
 import StellaWalnutCT from "../../../public/images/StellaWalnut2.JPG";
+import PlutoEspressoCT from "../../../public/images/PlutoCTEspresso.webp";
 import StellaWalnutST from "../../../public/images/StellaSTWalnut.webp";
 import StellaOakST from "../../../public/images/StellaOak.JPG";
 import PlutoSTWalnut from "../../../public/images/PlutoSTWalnut.webp";
@@ -48,6 +49,13 @@ const productsData = [
         colorCode: "#582f11",
         productName: "Stella Coffee Table - Set of 2",
         price: "$420",
+      },
+      {
+        imgSrc: PlutoEspressoCT,
+        color: "Espresso",
+        colorCode: "#442109",
+        productName: "Pluto Coffee Table",
+        price: "$135",
       },
     ],
   },
