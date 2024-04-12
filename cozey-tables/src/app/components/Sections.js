@@ -4,7 +4,10 @@ import ProductCard from "./ProductCard";
 const Sections = ({ data }) => {
   const { products, category } = data;
   return (
-    <div id={toSmallCase(category)} className="position-relative">
+    <div
+      id={toSmallCase(category)}
+      className="position-relative category-section"
+    >
       <div className="my-0 mx-auto max-w-screen-lg pt-8 px-20 pb-0">
         <div className="text-5xl text-blue">{category}</div>
       </div>

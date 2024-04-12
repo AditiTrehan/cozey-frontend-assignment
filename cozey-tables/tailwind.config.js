@@ -27,6 +27,8 @@ module.exports = {
         grey: "#4f6076",
         darkGrey: "#adadb7",
         lightGrey: "#bec8db",
+        brown: "#b35c1e",
+        lightBrown: "#b3a49b",
       },
       zIndex: {
         997: "997",
@@ -51,6 +53,7 @@ module.exports = {
         4.5: "18px",
       },
       fontSize: {
+        xxs: "10px",
         15: "15px",
       },
       gridTemplateColumns: {

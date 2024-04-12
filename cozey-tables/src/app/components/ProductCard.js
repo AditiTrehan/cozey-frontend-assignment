@@ -1,6 +1,7 @@
 import ColorButton from "./ColorButton";
 import NextImage from "./NextImage";
 import ProductDetails from "./ProductDetails";
+import TextButton from "./TextButton";
 
 const ProductCard = ({ products }) => {
   return products.map((product) => {
@@ -8,7 +9,7 @@ const ProductCard = ({ products }) => {
       <div className="relative flex flex-col items-start justify-evenly gap-3 w-100 h-full">
         <div className="relative w-100 h-76 aspect-auto">
           <span
-            className="box-border block overflow-hidden opacity-100 m-0 p-0 absolute"
+            className="box-border block overflow-hidden opacity-100 m-0 p-0 absolute img-container"
             style={{
               width: "initial",
               height: "initial",
@@ -20,6 +21,8 @@ const ProductCard = ({ products }) => {
             {/* Product Image  */}
             <NextImage imgSrc={product.imgSrc} />
           </span>
+          {/* Text Button */}
+          {product.outdoor ? <TextButton text="Outdoor" /> : null}
           <div className="absolute top-4 left-4"></div>
           <div>
             {/* Color button  */}
@@ -35,6 +38,7 @@ const ProductCard = ({ products }) => {
         <ProductDetails
           productName={product.productName}
           productPrice={product.price}
+          discount={product.discount}
         />
       </div>
     );
