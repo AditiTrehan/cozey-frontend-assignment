@@ -1,8 +1,10 @@
 import NavBar from "./components/Navbar";
+import Sections from "./components/Sections";
+import productsData from "../app/constants/productsData";
 
 export default function Home() {
   return (
-    <div className="relative bg-beige z-997">
+    <div className="relative bg-beige z-997 h-screen">
       <div className="relative pt-200">
         <div className="fixed w-full top-20 px-0 pt-0 pb-4 bg-beige transition-all duration-0.15 ease-in-out delay-0 z-9999999">
           <div className="lg:ml-auto lg:mr-auto lg:w-1440 pt-3 px-20 pb-0">
@@ -17,6 +19,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {productsData.map((data) => (
+          <Sections data={data} />
+        ))}
       </div>
     </div>
   );

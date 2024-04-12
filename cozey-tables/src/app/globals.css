@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.product-img {
+  @apply rounded-xxl bg-transparent cursor-pointer border-2 border-solid border-darkBeige;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
