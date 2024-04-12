@@ -30,6 +30,18 @@ body {
   @apply rounded-xxl bg-transparent cursor-pointer border-2 border-solid border-darkBeige;
 }
 
+.active {
+  @apply bg-black text-white;
+}
+
+.inactive {
+  @apply bg-transparent text-black;
+}
+
+.navbar-text {
+  @apply h-full flex justify-center items-center overflow-hidden cursor-pointer whitespace-nowrap text-15 py-1.5 px-4 rounded-2xl;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

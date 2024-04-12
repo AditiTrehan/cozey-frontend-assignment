@@ -105,14 +105,14 @@ const productsData = [
     ],
   },
   {
-    category: "Table Sets",
+    category: "Table Bundles",
     products: [
       {
         imgSrc: SettaOakTS,
         color: "Oak",
         colorCode: "#ddb586",
-        productName: "Stella Table Sets",
-        price: "$360",
+        productName: "Stella Table Set | 2-Unit Media & 2 Unit Coffee Table",
+        price: "$620",
       },
     ],
   },
