@@ -7,7 +7,17 @@ module.exports = {
   ],
   theme: {
     screens: {
-      lg: "1440px",
+      xsm: { max: "390px" },
+      xxs: { max: "400px" },
+      xs: { max: "425px" },
+      xss: { max: "430px" },
+      ssm: { max: "600px" },
+      sm: { max: "640px" },
+      xmd: { max: "700px" },
+      md: { max: "768px" },
+      lg: { max: "1024px" },
+      xlg: { max: "1200px" },
+      xl: { max: "1280px" },
     },
     extend: {
       backgroundImage: {
@@ -37,6 +47,7 @@ module.exports = {
       },
       padding: {
         200: "200px",
+        3.7: "15px",
       },
       top: {
         22: "90px",
@@ -47,14 +58,31 @@ module.exports = {
       width: {
         1440: "1440px",
         100: "400px",
+        25: "108px",
       },
       height: {
+        62: "248px",
+        68: "270px",
         76: "300px",
+        78: "308px",
         4.5: "18px",
+        5.5: "26px",
+      },
+      maxHeight: {
+        11.5: "47px",
+      },
+      maxWidth: {
+        "8xl": "1440px",
+        "9xl": "1890px",
       },
       fontSize: {
+        8: "8px",
+        xxsm: "9px",
         xxs: "10px",
+        11: "11px",
+        xxl: "28px",
         15: "15px",
+        xxxl: "32px",
       },
       gridTemplateColumns: {
         onefr: "1fr 1fr 1fr",
@@ -67,8 +95,13 @@ module.exports = {
         "5xl": "100px",
       },
       lineHeight: {
+        1.5: "8px",
+        3.5: "13px",
+        3.7: "14px",
         4.5: "17.56px",
         4.6: "18px",
+        8.5: "34px",
+        16: "46px",
       },
     },
   },

@@ -40,20 +40,21 @@ body {
 
 .navbar-text {
   @apply h-full flex justify-center items-center overflow-hidden cursor-pointer whitespace-nowrap text-15 py-1.5 px-4 rounded-2xl;
+  @screen md {
+    font-size: 11px;
+    min-width: fit-content;
+    overflow: initial;
+  }
 }
 
 .offer-text {
   @apply relative text-sm leading-4.6 flex items-center top-0 cursor-pointer;
 }
 
-.arrow {
-  font-size: 16px; /* Adjust font size as needed */
-  margin: 0 4px; /* Adjust margin as needed */
+.customize-text {
+  @apply xxs:top-0 xs:text-xxsm ssm:text-xxs leading-3 top-0 whitespace-nowrap;
 }
 
-.arrow::before {
-  content: "\2192"; /* Unicode for right arrow character */
-}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

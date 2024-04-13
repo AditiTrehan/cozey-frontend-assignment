@@ -24,22 +24,26 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative bg-beige z-997 h-screen">
+    <div className="relative bg-beige z-997">
       <div className="relative pt-200 bg-beige">
-        <div className="fixed w-full top-0 px-0 pt-0 pb-4 bg-beige transition-all duration-0.15 ease-in-out delay-0 z-9999999">
-          <div className="lg:ml-auto lg:mr-auto lg:w-1440 pt-3 px-20 pb-0">
-            <div className="flex flex-row justify-between p-0">
-              <div className="flex flex-col gap-1">
+        <div className="fixed w-full top-0 px-0 pt-10 bg-beige transition-all duration-0.15 ease-in-out delay-0 z-9999999 pb-4 xmd:pb-0 xmd:pt-10">
+          <div className="lg:ml-auto lg:mr-auto pt-3 px-20 pb-0 md:px-4 md:pt-1 md:pb-0">
+            <div className="flex flex-row justify-between p-0 lg:flex-col">
+              <div className="flex flex-col gap-1 lg:pl-4">
                 <h1
                   className={
-                    isHidden ? "hidden" : "pb-0 m-0 text-6xl text-black block"
+                    isHidden
+                      ? "hidden"
+                      : "pb-0 m-0 text-black block text-6xl leading-16 xmd:text-xxl xmd:leading-8.5"
                   }
                 >
                   Tables
                 </h1>
                 <span
                   className={
-                    isHidden ? "hidden" : "text-blackDes text-lg mb-5 block"
+                    isHidden
+                      ? "hidden"
+                      : "text-blackDes text-lg mb-5 block xmd:text-sm xmd:leading-4.6"
                   }
                 >
                   A perfect pairing to your sofa.
@@ -49,8 +53,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {productsData.map((data) => (
-          <Sections data={data} />
+        {productsData.map((data, key) => (
+          <Sections key={key} data={data} />
         ))}
       </div>
     </div>

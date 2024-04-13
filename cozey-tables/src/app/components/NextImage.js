@@ -9,7 +9,7 @@ const NextImage = ({ imgSrc }) => {
       alt="Tables"
       loading="lazy"
       className="absolute box-border p-0 m-auto block w-0 h-0 min-w-full max-w-full 
-                        min-h-full max-h-full object-contain product-img"
+                  min-h-full max-h-full object-contain product-img ssm:rounded-xl"
     />
   );
 };

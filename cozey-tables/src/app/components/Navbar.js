@@ -1,11 +1,10 @@
 "use client";
 import productsData from "../constants/productsData";
 import { toSmallCase } from "../helper";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [activeCategory, setActiveCategory] = useState("Coffee Tables");
-  const navRef = useRef(null);
 
   useEffect(() => {
     const options = {
@@ -38,16 +37,24 @@ const NavBar = () => {
     const category = toSmallCase(sectionId);
     const section = document.getElementById(category);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
     }
     setActiveCategory(category);
   };
 
   return (
-    <div className="flex flex-row h-12 bg-darkBeige gap-2.5 w-fit rounded-3xl overflow-hidden p-2">
-      {productsData.map((products) => {
+    <div
+      className="flex flex-row h-12 bg-darkBeige gap-2.5 w-fit rounded-3xl 
+                    overflow-hidden p-2 xmd:w-full xmd:overflow-scroll"
+    >
+      {productsData.map((products, key) => {
         return (
           <div
+            key={key}
             className={
               activeCategory === toSmallCase(products.category)
                 ? "active navbar-text"
