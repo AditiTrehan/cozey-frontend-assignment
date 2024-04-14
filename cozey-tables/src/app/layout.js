@@ -1,12 +1,9 @@
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
 const myFont = localFont({
-  src: "../../public/fonts/Larsseit/Larsseit.otf",
+  src: "../../public/fonts/Larsseit/Larsseit-Light.otf",
 });
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Cozy | Shop Tables",

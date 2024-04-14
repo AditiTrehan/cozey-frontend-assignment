@@ -1,8 +1,14 @@
 "use client";
+import { useState, useEffect } from "react";
+import localFont from "next/font/local";
+
 import NavBar from "./components/Navbar";
 import Sections from "./components/Sections";
 import productsData from "../app/constants/productsData";
-import { useState, useEffect } from "react";
+
+const headingFont = localFont({
+  src: "../../public/fonts/QuincyCF/QuincyCF-Thin.otf",
+});
 
 const Home = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -34,7 +40,7 @@ const Home = () => {
                   className={
                     isHidden
                       ? "hidden"
-                      : "pb-0 m-0 text-black block text-6xl leading-16 xmd:text-xxl xmd:leading-8.5"
+                      : `${headingFont.className} pb-0 m-0 text-black block text-6xl leading-16 xmd:text-xxl xmd:leading-8.5`
                   }
                 >
                   Tables
@@ -54,7 +60,11 @@ const Home = () => {
           </div>
         </div>
         {productsData.map((data, key) => (
-          <Sections key={key} data={data} />
+          <Sections
+            key={key}
+            data={data}
+            categoryClass={headingFont.className}
+          />
         ))}
       </div>
     </div>
