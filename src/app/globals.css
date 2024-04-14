@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.product-img {
+  @apply rounded-xxl bg-transparent cursor-pointer border-2 border-solid border-darkBeige;
+}
+
+.active {
+  @apply bg-black text-white;
+}
+
+.inactive {
+  @apply bg-transparent text-black;
+}
+
+.navbar-text {
+  @apply h-full flex justify-center items-center overflow-hidden cursor-pointer whitespace-nowrap text-15 py-1.5 px-4 rounded-2xl;
+  @screen md {
+    font-size: 11px;
+    min-width: fit-content;
+    overflow: initial;
+  }
+}
+
+.offer-text {
+  @apply relative text-sm leading-4.6 flex items-center top-0 cursor-pointer;
+}
+
+.customize-text {
+  @apply xxs:top-0 xs:text-xxsm ssm:text-xxs leading-3 top-0 whitespace-nowrap font-extrabold;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
