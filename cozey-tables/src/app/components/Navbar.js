@@ -13,6 +13,7 @@ const NavBar = () => {
       threshold: 0.4,
     };
 
+    //IntersectionObserver to set Active Category
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -36,11 +37,14 @@ const NavBar = () => {
     e.preventDefault();
     const category = toSmallCase(sectionId);
     const section = document.getElementById(category);
+
+    //Consider Fixed Header height for scroll
+    const headerHeight = 190;
     if (section) {
-      section.scrollIntoView({
+      window.scrollTo({
+        top: section.offsetTop - headerHeight,
+        left: 0,
         behavior: "smooth",
-        block: "start",
-        inline: "nearest",
       });
     }
     setActiveCategory(category);

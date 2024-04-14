@@ -12,7 +12,7 @@ const Home = () => {
 
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setIsHidden(prevScrollPos < currentScrollPos && currentScrollPos > 0);
+      setIsHidden(prevScrollPos < currentScrollPos && currentScrollPos > 0); // Hide Top Header on window scroll
       prevScrollPos = currentScrollPos;
     };
 
