@@ -22,7 +22,7 @@ Desktop:
 ![image](https://github.com/AditiTrehan/cozey-frontend-assignment/assets/38093532/a680b278-912e-4223-b902-c5032009aa28)
 
 Mobile:
-![image](https://github.com/AditiTrehan/cozey-frontend-assignment/assets/38093532/da2c75b0-c5b3-45b5-8830-e30bf5a4661f)
+https://www.loom.com/share/412670b1426d43708e4fa4df54ef9676?sid=2308043a-9bfc-4acb-a468-4821ddd474c7
 
 
 
