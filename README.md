@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cozey Shop Tables Page UI
 
-## Getting Started
+This project aims to build a specific page of Cozey website i.e Tables. It is built using React.js, using provided images to achieve responsive designs for desktop and mobile.
 
-First, run the development server:
+# Setup and Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+    `git clone`
+2. Install the required dependencies:
+    `npm install`
+3. Run the app:
+    `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app will be running on http://localhost:3000/
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Resources Provided
+- UI Reference: Cozey Coffee Tables (https://www.cozey.ca/shop/tables?type=coffeeTables)
+- Assets (Fonts + Images): Google Drive Link (https://drive.google.com/drive/folders/1Si1wmgaBlWcP-J6V3jpr_8AC8pls8820?usp=sharing)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Screenshot
+Desktop:
+![image](https://github.com/AditiTrehan/cozey-frontend-assignment/assets/38093532/a680b278-912e-4223-b902-c5032009aa28)
 
-## Learn More
+Mobile:
+![image](https://github.com/AditiTrehan/cozey-frontend-assignment/assets/38093532/da2c75b0-c5b3-45b5-8830-e30bf5a4661f)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Reference Video :
+https://www.loom.com/share/78cb45b23c274c82bae53ef5f0ff65d8?sid=77652e38-f844-45c1-bae0-c5d9ebac7a61
